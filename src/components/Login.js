@@ -23,7 +23,8 @@ export default function Login({ setToken }) {
           username,
           password
         });
-        setToken(token);
+        setToken(token.loginTokenString);
+        console.log(`Chairman the user token inside the Login Component is: ${JSON.stringify(token)} ${token.loginTokenString}`)
       }
 
   return (
